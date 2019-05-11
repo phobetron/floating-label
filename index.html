@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Floating Label</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="floating-label.jquery.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      $(window).ready(function() {
+        var floatName = $('label[for="name"]');
+        floatName.FloatingLabel();
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Floating Label</h1>
+    <p>
+      <label for="name">Name</label>
+      <input id="name" type="text" />
+    </p>
+  </body>
+</html>
